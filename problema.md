@@ -1,9 +1,9 @@
-#ET - ET phone home
+# ET - ET phone home
 
-##Problema
+## Problema
 Construir um reconhecedor de linguagem livre de contexto que resolva o problema abaixo:
 
-##Descrição
+## Descrição
 Desde o início de 2006 o Seti@home (programa de busca de vida alienígena) tem registrado padrões estranhos em transmissões de rádio recebidas do espaço. Inicialmente imaginou-se tratar apenas de estática. Porém, com o tempo e a repetição das transmissões os pesquisadores foram se convencendo que algo mais havia. Convidados a participar do projeto, lingüistas da Universidade de Baylor identificaram uma linguagem na transmissão. Era uma linguagem bastante simples.
 
 A língua tem várias regras de composição de palavras. As regras de composição serão descritas nesse problema pelos seguintes elementos: 
@@ -35,7 +35,7 @@ aB -> ab, pois B -> b
 Já a palavra b não pode ser produzida a partir de S a partir desse mesmo conjunto de regras de composição. 
 Dado um conjunto de regras de composição e uma lista de palavras, sua tarefa é determinar, para cada uma das palavras, se ela pode ou não ser produzida a partir das regras descritas na instância atual. 
 
-##Entrada
+## Entrada
 A entrada é composta por vários casos de teste. Cada teste segue as regras descritas acima. 
 Na primeira linha de cada teste aparece o símbolo raiz, que sempre será uma letra maiúscula. Na segunda linha, o conjunto V será fornecido como uma palavra composta apenas por letras maiúsculas. Cada letra dessa palavra será identificada como um membro de V . 
 
@@ -44,11 +44,11 @@ A seguir, serão fornecidas várias linhas, que descreverão as regras de compos
 
 Por fim, são fornecidas várias linhas, cada uma contendo uma palavra que desejamos saber se pode ou não ser produzida a partir da raiz por meio das regras de composição. Essas palavras não vão conter qualquer caractere em ``V`` e são compostas por no máximo ``50`` caracteres. A lista de palavras termina com uma linha contendo ``#`` na primeira coluna. 
 
-##Saída
+## Saída
 No início de cada instância imprima a linha ``Instancia k``, onde ``k`` é o número da instância atual. Em seguida, para cada palavra ``x`` da lista, imprima uma linha na saída dizendo ``x`` e uma palavra valida se ela pode ser obtida a partir da raiz por meio das regras de composição, e ``x`` não e uma palavra valida caso contrário. Imprima uma linha em branco após cada instância. 
 
 
-##Exemplo
+## Exemplo
 ```
 Entrada:
 S
