@@ -2,13 +2,15 @@ package et;
 
 public class Producao {
 	
-	public String variavel;
+	private String variavel;
+	private String resultado;
 	
-	public String [] producao;
+	private String [] producao;
 	
 	public Producao(String line) {
 		String[] vet = line.split(" -> ");
 		this.variavel = vet[0];
+		this.resultado = vet[1];
 		
 		this.producao = new String[2];
 		this.producao[0] = String.valueOf( vet[1].charAt(0) );
@@ -17,9 +19,16 @@ public class Producao {
 		}
 	}
 	
-	//Chomsky só tem 2 produções: 2 variáveis OU 1 terminal
-	public boolean isTerminal() {
-		return this.producao[1] == null;
+	public boolean produz( String resultado ) {
+		return this.resultado.equals(resultado);
+	}
+	
+	public String getProducao(int index) {
+		return this.producao[index];
+	}
+	
+	public String getProducaoEsquerda() {
+		return this.producao[0];
 	}
 	
 	@Override

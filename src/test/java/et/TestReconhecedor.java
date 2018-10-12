@@ -23,7 +23,6 @@ public class TestReconhecedor  {
 	@Test
 	public void testa_parser_de_entrada() {
 		problemas.forEach(System.out::println);
-		
 	}
 	
 	@Test
@@ -34,6 +33,7 @@ public class TestReconhecedor  {
 		ReconhecedorLLC reconhecedor = new ReconhecedorLLC();
 		for( String palavra: p.getParavrasParaTestar() ) {
 			reconhecedor.reconhece(p.getGramatica(), palavra);
+			reconhecedor.printDetails();
 		}
 	}
 	
@@ -45,6 +45,7 @@ public class TestReconhecedor  {
 		ReconhecedorLLC reconhecedor = new ReconhecedorLLC();
 		for( String palavra: p.getParavrasParaTestar() ) {
 			reconhecedor.reconhece(p.getGramatica(), palavra);
+			reconhecedor.printDetails();
 		}
 	}
 	
@@ -56,6 +57,7 @@ public class TestReconhecedor  {
 		ReconhecedorLLC reconhecedor = new ReconhecedorLLC();
 		for( String palavra: p.getParavrasParaTestar() ) {
 			reconhecedor.reconhece(p.getGramatica(), palavra);
+			reconhecedor.printDetails();
 		}
 	}
 	
@@ -67,6 +69,7 @@ public class TestReconhecedor  {
 		ReconhecedorLLC reconhecedor = new ReconhecedorLLC();
 		for( String palavra: p.getParavrasParaTestar() ) {
 			reconhecedor.reconhece(p.getGramatica(), palavra);
+			reconhecedor.printDetails();
 		}
 	}
 	
@@ -78,6 +81,7 @@ public class TestReconhecedor  {
 		ReconhecedorLLC reconhecedor = new ReconhecedorLLC();
 		for( String palavra: p.getParavrasParaTestar() ) {
 			reconhecedor.reconhece(p.getGramatica(), palavra);
+			reconhecedor.printDetails();
 		}
 	}
 }
