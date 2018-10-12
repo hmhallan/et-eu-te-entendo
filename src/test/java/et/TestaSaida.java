@@ -21,12 +21,27 @@ public class TestaSaida {
 	}
 
 	@Test
-	public void testa_parser_de_entrada() {
+	public void testa_arquivo_completo() {
 		int count = 1;
 		ReconhecedorLLC reconhecedor = new ReconhecedorLLC();
 		
 		for (Problema p: problemas){
 			System.out.println("Instancia " + (count++) );
+			for( String palavra: p.getParavrasParaTestar() ) {
+				reconhecedor.reconhece(p.getGramatica(), palavra);
+				reconhecedor.printResult();
+			}
+			System.out.println();
+		};
+	}
+	
+	@Test
+	public void testa_os_2_primeiros_problemas() {
+		ReconhecedorLLC reconhecedor = new ReconhecedorLLC();
+		
+		for (int i = 0; i < 2; i++){
+			Problema p = problemas.get(i++);
+			System.out.println("Instancia " + (i) );
 			for( String palavra: p.getParavrasParaTestar() ) {
 				reconhecedor.reconhece(p.getGramatica(), palavra);
 				reconhecedor.printResult();
