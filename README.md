@@ -6,9 +6,6 @@ Este projeto utiliza o algoritmo CYK (Cocke-Younger-Algorithm) para reconhecer s
 
 A forma de descrever a gramática está na descrição do problema.
 
-A lógica foi altamente inspirada nesta implementação:
-https://github.com/ajh17/CYK-Java
-
 Explicação da lógica do CYK:
 https://www.youtube.com/watch?v=VTH1k-xiswM
 
