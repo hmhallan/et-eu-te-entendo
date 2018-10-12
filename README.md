@@ -6,6 +6,9 @@ Este projeto utiliza o algoritmo CYK (Cocke-Younger-Algorithm) para reconhecer s
 
 A forma de descrever a gramática está na descrição do problema.
 
+Algoritmo inspirado em:
+https://github.com/mynttt/CYK-algorithm
+
 Explicação da lógica do CYK:
 https://www.youtube.com/watch?v=VTH1k-xiswM
 
